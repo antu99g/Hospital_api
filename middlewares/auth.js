@@ -1,6 +1,7 @@
 const jwt = require('jsonwebtoken');
 const Doctor = require('../models/doctors');
 
+// Middleware for verifying a user(doctor)
 module.exports.verifyUser = async function (req, res, next) {   
    try{
       const bearerHeader = req.headers['authorization'];

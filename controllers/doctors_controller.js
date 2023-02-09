@@ -1,6 +1,7 @@
 const Doctor = require('../models/doctors');
 const jwt = require("jsonwebtoken");
 
+// Function for registering a doctor
 module.exports.register = async function (req, res) {
    try{
       if(req.body.password != req.body.confirmPassword){
@@ -42,6 +43,7 @@ module.exports.register = async function (req, res) {
    }
 }
 
+// Function for logging-in a doctor
 module.exports.login = async function (req, res) {      
    try{
       let doctor = await Doctor.findOne({ username: req.body.username });

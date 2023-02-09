@@ -3,8 +3,6 @@ const router = express.Router();
 
 const doctorsController = require('../controllers/doctors_controller');
 
-console.log("router loaded");
-
 
 // Route for registering a doctor
 router.post("/register", doctorsController.register);

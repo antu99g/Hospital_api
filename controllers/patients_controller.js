@@ -2,6 +2,7 @@ const Patient = require('../models/patients');
 const Doctor = require('../models/doctors');
 const Report = require('../models/report');
 
+// Function for registering a patient
 module.exports.register = async function (req, res) {
    try{
       let patient = await Patient.findOne({ phone: req.body.phone });
@@ -45,6 +46,7 @@ module.exports.register = async function (req, res) {
    }
 };
 
+// Function for creating a report for a patient
 module.exports.createReport = async function (req, res) {
    try{
       const patient = await Patient.findById(req.params.id);
@@ -76,6 +78,7 @@ module.exports.createReport = async function (req, res) {
    }
 };
 
+// Function for all reports of a patient
 module.exports.reportList = async function (req, res) {
    let patient = await Patient.findById(req.params.id);
 
@@ -107,6 +110,7 @@ module.exports.reportList = async function (req, res) {
    }
 };
 
+// Function for all reports of a specific status
 module.exports.allStatusReport = async function (req, res) {
    try{
       console.log('function running');
