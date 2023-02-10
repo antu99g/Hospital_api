@@ -36,5 +36,5 @@ To run this project, run the following command
 |   Login a doctor    | `POST` | `/doctors/login` |
 |   Register a patient    | `POST` | `/patients/register` |
 |   Creating report    | `POST` | `/patients/:id/create_report` |
-|   Fetching all reports <sub>of a patient</sub>    | `GET` | `/patients/:id/all_reports` |
-|   Fetching all reports <sub>with same status</sub>    | `GET` | `/reports/:status` |
+|   Fetching all reports <sup><sub>of a patient</sub></sup>    | `GET` | `/patients/:id/all_reports` |
+|   Fetching all reports <sup><sub>with same status</sub></sup>    | `GET` | `/reports/:status` |
