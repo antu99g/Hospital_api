@@ -23,7 +23,7 @@ To run this project, run the following command
 
 #### API Prefix
 
-```http
+```bash
   https://hospital-api-0azz.onrender.com/
 ```
 
