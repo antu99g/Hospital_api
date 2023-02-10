@@ -5,9 +5,9 @@ This is a nodeJs api for storing and tracking reports of patients.
 
 To run this project, run the following command
 
-``bash
+```bash
   npm start
-``
+```
 
 
 ## Tech Stack
